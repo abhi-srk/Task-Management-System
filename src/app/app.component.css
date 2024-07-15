@@ -1,0 +1,56 @@
+/* Ensure the html and body take up the full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevent scroll on the body */
+  }
+  
+  /* Container for the task form and task list */
+  .task-container {
+    display: flex;
+    flex-wrap: wrap; /* Wrap content if necessary */
+    height: 100vh; /* Full viewport height */
+    padding: 1rem;
+    background-color: #f4f4f4;
+    box-sizing: border-box; /* Include padding in the height calculation */
+  }
+  
+  /* Style for each component */
+  .task-form {
+    flex: 1; /* Grow to fill available space */
+    max-width: 100%; /* Ensures no overflow */
+    min-width: 300px; /* Minimum width for responsiveness */
+    margin-right: 1rem; /* Space between the form and list */
+  }
+  
+  /* Task List styles */
+  .task-list {
+    flex: 2; /* Grow to take more space compared to the form */
+    max-width: 100%; /* Ensures no overflow */
+    min-width: 300px; /* Minimum width for responsiveness */
+    overflow-y: auto; /* Scrollable if content overflows */
+    height: calc(100vh - 2rem); /* Subtract the vertical padding */
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Scrollbar styling */
+  .task-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .task-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  .task-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  .task-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  

@@ -1,0 +1,22 @@
+<div>
+  <h2>Task List</h2>
+  <div>
+    <label for="sortField">Sort by: </label>
+    <select id="sortField" (change)="setSortField($event)">
+      <option value="dueDate">Due Date</option>
+      <option value="priority">Priority</option>
+      <option value="status">Status</option>
+    </select>
+  </div>
+  <ul>
+    <li *ngFor="let task of tasks">
+      <h3>{{ task.title }}</h3>
+      <p>Description: {{ task.description }}</p>
+      <p>Due Date: {{ task.dueDate | date }}</p>
+      <p>Priority: {{ task.priority }}</p>
+      <p>Status: {{ task.status }}</p>
+      <button (click)="deleteTask(task)">Delete</button>
+      <button (click)="editTask(task)">Edit</button>
+    </li>
+  </ul>
+</div>

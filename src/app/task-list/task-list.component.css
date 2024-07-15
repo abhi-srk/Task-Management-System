@@ -1,0 +1,76 @@
+/* Container for the task list */
+div {
+    max-width: 100%;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Heading for the task list */
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Dropdown for sorting */
+  select {
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    background-color: #fff;
+  }
+  
+  /* List of tasks */
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual task items */
+  li {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Task item title */
+  h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Task item description and other details */
+  p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  /* Buttons for delete and edit */
+  button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+  }
+  
+  button:hover {
+    background-color: #c82333;
+  }
+  
+  button.edit {
+    background-color: #007bff;
+  }
+  
+  button.edit:hover {
+    background-color: #0056b3;
+  }
+  
